@@ -27,7 +27,7 @@ export async function getGitHubRepos(
     // Filter out forks and sort by stars
     const repos = data
       .filter((repo) => !repo.fork)
-      .sort((a, b) => b.stargazers_count - a.stargazers_count);
+      .sort((a, b) => (b.stargazers_count ?? 0) - (a.stargazers_count ?? 0));
 
     return repos as GitHubRepo[];
   } catch (error) {
@@ -44,10 +44,10 @@ export async function getGitHubStats(): Promise<GitHubStats> {
     ]);
 
     const totalStars = repos.reduce(
-      (sum, repo) => sum + repo.stargazers_count,
+      (sum, repo) => sum + (repo.stargazers_count ?? 0),
       0
     );
-    const totalForks = repos.reduce((sum, repo) => sum + repo.forks_count, 0);
+    const totalForks = repos.reduce((sum, repo) => sum + (repo.forks_count ?? 0), 0);
 
     const topLanguages: { [key: string]: number } = {};
     repos.forEach((repo) => {
