@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin } from "lucide-react";
 
 export const socialLinks = [
   {
@@ -22,18 +22,10 @@ export const socialLinks = [
     username: "hkoneti@asu.edu",
     color: "#EA4335",
   },
-  {
-    name: "Phone",
-    url: "tel:+14809716434",
-    icon: Phone,
-    username: "+1 (480) 971-6434",
-    color: "#34A853",
-  },
 ];
 
 export const contactInfo = {
   email: "hkoneti@asu.edu",
-  phone: "+1 (480) 971-6434",
   location: "Tempe, Arizona, United States",
   timezone: "PST (UTC-7)",
   preferredContact: "email",

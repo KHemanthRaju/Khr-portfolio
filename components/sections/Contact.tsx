@@ -154,15 +154,6 @@ export default function Contact() {
                   </a>
                 </div>
                 <div>
-                  <p className="text-sm text-slate dark:text-slate light:text-gray-600 mb-1">Phone</p>
-                  <a
-                    href={`tel:${contactInfo.phone.replace(/\s/g, "")}`}
-                    className="text-cyan dark:text-cyan light:text-blue-600 hover:underline"
-                  >
-                    {contactInfo.phone}
-                  </a>
-                </div>
-                <div>
                   <p className="text-sm text-slate dark:text-slate light:text-gray-600 mb-1">Location</p>
                   <p className="text-white dark:text-white light:text-gray-900">{contactInfo.location}</p>
                 </div>

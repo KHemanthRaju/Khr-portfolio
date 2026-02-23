@@ -11,7 +11,6 @@ export const profile = {
   bio: "Building scalable cloud solutions and AI-powered applications at ASU Cloud Innovation Center. Master's student with perfect 4.00 GPA, ex-Oracle engineer, and passionate about leveraging cloud technology to solve real-world problems.",
   location: "Tempe, Arizona, United States",
   email: "hkoneti@asu.edu",
-  phone: "+1 (480) 971-6434",
   availability: "Open to Spring 2026 Internships",
   tagline: "Passionate about building impactful cloud solutions that make a difference",
   yearsOfExperience: 3,
