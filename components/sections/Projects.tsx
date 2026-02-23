@@ -77,7 +77,7 @@ export default function Projects() {
                   <Button
                     variant="outline"
                     size="sm"
-                    onClick={() => window.open(project.demoUrl, "_blank")}
+                    onClick={() => project.demoUrl && window.open(project.demoUrl, "_blank")}
                     className="flex-1"
                   >
                     <ExternalLink className="w-4 h-4" />
