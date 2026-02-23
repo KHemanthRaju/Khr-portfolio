@@ -31,16 +31,8 @@ export default function Hero() {
             {profile.bio}
           </p>
 
-          {/* GitHub Stats */}
+          {/* Certification Badge */}
           <div className="flex items-center justify-center gap-6 text-sm text-slate dark:text-slate light:text-gray-600">
-            <span className="flex items-center gap-2">
-              <span className="text-cyan dark:text-cyan light:text-blue-600 font-bold">{profile.github.repos}+</span> Projects
-            </span>
-            <span className="text-cyan dark:text-cyan light:text-blue-600">•</span>
-            <span className="flex items-center gap-2">
-              <span className="text-cyan dark:text-cyan light:text-blue-600 font-bold">{profile.github.followers}</span> Followers
-            </span>
-            <span className="text-cyan dark:text-cyan light:text-blue-600">•</span>
             <span className="text-cyan dark:text-cyan light:text-blue-600 font-bold">AWS Certified</span>
           </div>
 
